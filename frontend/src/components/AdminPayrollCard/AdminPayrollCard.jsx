@@ -54,7 +54,12 @@ const AdminPayrollCard = ({ el, updateApproval, handleApproval }) => {
             .split(",")
             .sort()
             .map((link, index) => (
-              <a href={link} className="value links-text" key={index}>
+              <a
+                href={link}
+                target="_blank"
+                className="value links-text"
+                key={index}
+              >
                 {imageView[index]}
               </a>
             ))}
