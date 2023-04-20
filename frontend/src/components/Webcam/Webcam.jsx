@@ -24,8 +24,7 @@ const WebCamContainer = ({ img, setImg }) => {
         <>
           <Webcam
             audio={false}
-            mirrored={true}
-            height={400}
+            height={"100%"}
             width={"100%"}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
