@@ -190,7 +190,7 @@ app.post("/upload-s3", (req, res) => {
         .status(500)
         .json({ success: false, message: "Error uploading file" });
     }
-    console.log(data);
+    console.log("S3 DATA \n\n", data);
 
     res.status(200).json({ data });
   });

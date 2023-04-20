@@ -14,7 +14,7 @@ function App() {
 
   axios.defaults.baseURL =
     process.env.NODE_ENV === "production"
-      ? "https://moveinsync-backend-lwg2mitpd-ujjwal2505.vercel.app"
+      ? "https://856b-103-134-132-206.ngrok-free.app"
       : "http://localhost:8080";
   axios.defaults.headers.userId = user.phoneNo;
   axios.defaults.headers.name = user.name;
