@@ -1,0 +1,42 @@
+.payroll_card {
+  /* border: 1px solid #000; */
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &_row {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .value {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .links-text {
+      color: darkblue;
+    }
+
+    .links {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &_button {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}

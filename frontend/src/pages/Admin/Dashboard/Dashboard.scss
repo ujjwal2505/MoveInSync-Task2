@@ -1,0 +1,53 @@
+.dashboard {
+  background-color: #3aae4a;
+  color: #fff;
+  padding: 1rem;
+
+  &_heading {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  &_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+}
+
+.profile_payroll {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.dashboard_upload {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2196f3;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}

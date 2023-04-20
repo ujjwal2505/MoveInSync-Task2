@@ -1,0 +1,23 @@
+.cam_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.webImg {
+  /* height: 400px;
+    width: 300px; */
+  object-fit: cover;
+}
+
+.webbutton {
+  background-color: crimson;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
