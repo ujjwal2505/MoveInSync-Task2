@@ -25,7 +25,10 @@ const spreadsheetId = process.env.DATABASE_ID;
 
 function getAuth() {
   const auth = new google.auth.GoogleAuth({
-    keyFile: "credentials.json",
+    credentials: {
+      client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+      private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY.replace(/\\n/g, "\n"),
+    },
     scopes: "https://www.googleapis.com/auth/spreadsheets",
   });
   return auth;
