@@ -11,13 +11,18 @@ const AdminPayrollCard = ({ el, updateApproval, handleApproval }) => {
     updateApproval(payload);
   };
 
+  const imageView = ["Back", "Front", "Left", "Right"];
+
   return (
     <div className="admin-payroll_card">
+      <div className="admin-payroll_card_row">
+        <div className="title">Name:</div>
+        <div className="value">{el.name}</div>
+      </div>
       <div className="admin-payroll_card_row">
         <div className="title">Number:</div>
         <div className="value">{el.number}</div>
       </div>
-
       <div className="admin-payroll_card_row">
         <div className="title">Upload Month:</div>
         <div className="value">{el.uploadMonth}</div>
@@ -45,11 +50,14 @@ const AdminPayrollCard = ({ el, updateApproval, handleApproval }) => {
       <div className="admin-payroll_card_row">
         <div className="title">Links:</div>
         <div className="links">
-          {el.links.split(",").map((link, index) => (
-            <a href={link} className="value links-text" key={index}>{`Photo${
-              index + 1
-            }`}</a>
-          ))}
+          {el.links
+            .split(",")
+            .sort()
+            .map((link, index) => (
+              <a href={link} className="value links-text" key={index}>
+                {imageView[index]}
+              </a>
+            ))}
         </div>
       </div>
 

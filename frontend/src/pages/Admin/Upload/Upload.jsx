@@ -81,7 +81,7 @@ const Upload = () => {
   const uploadImagesToSheet = async () => {
     const payload = {
       uploadMonth: moment().format("MMMM"),
-      uploadDateTime: moment().format("DD-MMM-YYYY / HH:mm A"),
+      uploadDateTime: moment().format("DD-MMM-YYYY / hh:mm A"),
       links: linksArr,
       approval: "Pending",
       payoutLink: "Pending",
@@ -166,7 +166,7 @@ const Upload = () => {
           onClick={handleSubmit}
           disabled={isUploading}
         >
-          Upload
+          {isUploading ? "Uploading" : "Upload"}
         </Button>
       </div>
     </div>
