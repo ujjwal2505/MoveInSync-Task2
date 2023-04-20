@@ -13,8 +13,8 @@ function App() {
   const { user } = useContext(UserContext);
 
   axios.defaults.baseURL =
-    process.env.NODE_ENV === "production"
-      ? window.location.origin
+    process.env.NODE_ENV !== "production"
+      ? "https://moveinsync-backend-lwg2mitpd-ujjwal2505.vercel.app"
       : "http://localhost:8080";
   axios.defaults.headers.userId = user.phoneNo;
   axios.defaults.headers.name = user.name;

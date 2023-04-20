@@ -5,6 +5,7 @@ import { UserContext } from "../../../contexts/UserContext";
 import TextField from "@mui/material/TextField";
 import "./Login.scss";
 import { toast } from "react-toastify";
+import company_logo from "./../../../assets/logo.png";
 
 const Login = () => {
   const [fields, setfields] = useState({
@@ -67,8 +68,9 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2 className="login-heading">Login</h2>
-      <img src="https://play-lh.googleusercontent.com/m20UKsOBJWtPaXKDEPY82IRjQZ_GUsbt-ll9QJUvoHDufFCzFk97jNHYtLG_kj9YbjU" />
+      {/* <h2 className="login-heading">Login</h2> */}
+      {/* <img src="https://play-lh.googleusercontent.com/m20UKsOBJWtPaXKDEPY82IRjQZ_GUsbt-ll9QJUvoHDufFCzFk97jNHYtLG_kj9YbjU" /> */}
+      <img src={company_logo} alt="logo" />
 
       <TextField
         label="Enter your Phone No"

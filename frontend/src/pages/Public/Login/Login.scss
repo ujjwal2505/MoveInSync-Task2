@@ -1,5 +1,11 @@
 .login-container {
+  height: 100vh;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   .login-heading {
     font-size: 34px;
     margin: 16px 0;
@@ -8,7 +14,7 @@
   img {
     width: 100%;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 36px;
   }
 
   .input-field {
